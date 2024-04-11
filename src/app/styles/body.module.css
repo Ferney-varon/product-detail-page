@@ -75,7 +75,6 @@
   width: 152px;
   height: 115px;
   border: 1px solid #f0f0f0;
-  opacity: 0px;
   display: grid;
   place-items: center;
 }
