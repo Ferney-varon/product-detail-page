@@ -474,9 +474,10 @@
     position: fixed;
     bottom: 0;
     left: 0;
+    display: flex;
     background-color: #fff;
     width: 100%;
-    padding: 1rem 0;
+    padding: 2rem;
   }
   .optionItem {
     height: 23px;
@@ -522,6 +523,15 @@
     display: grid;
     place-content: center;
   }
+  .section > :first-child{
+    font-size: 30px;
+  }
+.section {
+  height: 100px;
+  gap:0.5rem;
+  letter-spacing: 1px;
+}
+
 }
 
 @media (max-width: 576px) {

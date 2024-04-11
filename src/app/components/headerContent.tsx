@@ -10,8 +10,10 @@ export default function HeaderContent() {
   return (
     <div className={styles.contentWrapper}>
       <div className={styles.headerContent}>
-        <div className={styles.burgerWrapper}>
-          <BurgerIcon />
+        <div>
+          <div className={styles.burgerWrapper}>
+            <BurgerIcon />
+          </div>
         </div>
         <h1 className="primaryText title">Needus </h1>
         <div className={styles.inputWrapper}>
