@@ -26,6 +26,7 @@ export default function Product() {
               width={128}
               height={67}
               alt="imageTv2"
+              style={{width:"100%",height:"auto"}}
             />
           </div>
           <div className={styles.optionsWrapper}>
@@ -34,6 +35,7 @@ export default function Product() {
               width={128}
               height={67}
               alt="imageTv3"
+              style={{width:"100%",height:"auto"}}
             />
           </div>
           <div className={styles.optionsWrapper}>
@@ -42,6 +44,7 @@ export default function Product() {
               width={128}
               height={67}
               alt="imageTv4"
+              style={{width:"100%",height:"auto"}}
             />
           </div>
           <div className={styles.carrouselArrow}>
@@ -49,10 +52,8 @@ export default function Product() {
           </div>
         </div>
         <div className={styles.mainImage}>
-          <Image
+          <img
             src="/images/mainImageTv.png"
-            width={470}
-            height={310}
             alt="Main image Tv"
           />
         </div>
