@@ -226,11 +226,15 @@
 }
 
 .infoContainer {
-  padding: 0 5rem;
+  padding: 2rem 5rem;
   font-size: 18px;
   font-weight: 300;
   text-align: left;
   color: #191919;
+}
+
+.infoContainer > p {
+  margin: 0;
 }
 
 .relatedProductsContainer {
@@ -476,6 +480,7 @@
     font-size: 24px;
   }
   .descriptionInfo,
+  .infoContainer,
   .productOptions {
     padding: 1rem 0;
   }
@@ -490,7 +495,7 @@
   .productImages {
     flex-direction: column-reverse;
   }
-  .imageOptions > :nth-child(2) {
+  .optionsWrapper:nth-child(2) {
     display: none;
   }
   .mainImage {
