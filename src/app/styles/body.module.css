@@ -212,10 +212,16 @@
 }
 
 .descriptionInfo {
-  padding: 0 5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem 5rem;
   font-size: 18px;
   font-weight: 300;
   text-align: left;
+}
+.descriptionInfo > p {
+  margin: 0;
 }
 
 .infoContainer {
