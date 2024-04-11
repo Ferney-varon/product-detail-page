@@ -1,0 +1,256 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2f333a;
+  height: 60px;
+  align-items: center;
+}
+
+.contentWrapper {
+  width: 100%;
+  height: 120px;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 0 3rem;
+}
+
+.descriptionWrapper {
+  padding-left: 4rem;
+}
+
+.languageWrapper {
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.inputWrapper {
+  width: 70%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid #f0f0f0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.inputContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 2px solid #f0f0f0;
+  padding: 0 0.5rem 0 2rem;
+}
+
+.inputContainer > button {
+  height: 60px;
+  width: 60px;
+  background-color: #2f333a;
+  color: white;
+}
+
+.inputContainer > input {
+  height: 100%;
+  border: none;
+  font-size: 20px;
+  color: #969696;
+}
+
+.logoWrapper {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  height: auto;
+}
+
+.categories {
+  position: relative;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.loginContainer > a {
+  cursor: pointer;
+}
+.loginContainer > span {
+  color: #f0f0f0;
+}
+
+.dropdownWrapper {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 2rem;
+  color: #191919;
+}
+
+.dropdown {
+  position: absolute;
+  bottom: 0;
+  top: 150%;
+  width: 15rem;
+}
+
+.dropdownTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropDownContent {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  z-index: 1001;
+  padding: 0 2rem;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropDownContent > span:not(last-child) {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1rem 0;
+  color: #191919;
+}
+
+.navigationWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2f333a;
+  height: 60px;
+  align-items: center;
+  color: #f0f0f0;
+}
+
+.dropdownContainer {
+  height: 100%;
+  width: 20%;
+  background-color: #e73c17;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.navBar {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid #f0f0f0;
+  align-content: center;
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.items > li {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contactInfo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem 0 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contactInfo > div {
+  text-align: right;
+}
+
+.contactInfo > div > span {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contactInfo > div > span:last-child {
+  font-weight: 600;
+}
+
+.burgerWrapper {
+  display: none;
+  background-color: #e73c17;
+  width: 40px;
+  height: 40px;
+}
+
+.mobileIcons {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .contactInfo,
+  .dropdownContainer {
+    width: 30%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .inputWrapper,
+  .firstContent,
+  .navigationWrapper {
+    display: none;
+  }
+  .burgerWrapper {
+    display: grid;
+    place-items: center;
+  }
+  .headerContent {
+    padding: 0 1rem;
+  }
+  .mobileIcons {
+    display: flex;
+    gap: 1rem;
+  }
+}
