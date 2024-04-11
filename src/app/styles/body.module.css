@@ -495,13 +495,13 @@
   .productImages {
     flex-direction: column-reverse;
   }
-  .optionsWrapper:nth-child(2) {
+  .imageOptions>:nth-child(2) {
     display: none;
   }
   .mainImage {
     background-color: transparent;
   }
-  .optionsWrapper:nth-child(3) {
+  .imageOptions>:nth-child(3) {
     border: 1px solid #e73c17;
   }
   .imageOptions {
