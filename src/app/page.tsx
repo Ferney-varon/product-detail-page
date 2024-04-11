@@ -1,95 +1,85 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Header from "./components/header";
+import styles from "./styles/body.module.css";
+import ProductInformation from "./components/productInformation";
+import Product from "./components/product";
+import RelatedProductsCard from "./components/relatedProductsCard";
+import EllipseIcon from "./assets/icons/ellipseIcon";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <Header />
+      <section>
+        <div className={styles.section}>
+          <span className="primaryText sectionTitle">tv collection</span>
+          <span>home / product / tv collection</span>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <Product />
+        <ProductInformation />
+        <div className={styles.relatedProductsContainer}>
+          <h2>Related Products</h2>
+          <div className={styles.cardsWrapper}>
+            <div className="card-wrapper">
+              <RelatedProductsCard
+                badgeText="NEW"
+                badgeColor="#12A05C"
+                image="relatedImage1"
+                product="Sony BRAVIA XR Android Tv"
+                price="$800.22"
+                originalPrice="$1000.66"
+                likedProduct={true}
+              />
+            </div>
+            <div className="card-wrapper">
+              <RelatedProductsCard
+                badgeText="-10%"
+                badgeColor="#E73C17"
+                image="relatedImage2"
+                product="Mi P1 Smart Android HD TV"
+                price="$400.00"
+              />
+            </div>
+            <div className="card-wrapper">
+              <RelatedProductsCard
+                badgeText="HOT"
+                badgeColor="#FF9900"
+                image="relatedImage3"
+                product="Konka OLED Android Tv"
+                price="$700.00"
+              />
+            </div>
+            <div className="card-wrapper">
+              <RelatedProductsCard
+                badgeText="2 Years Warranty"
+                badgeColor="#7F7CF6"
+                image="relatedImage4"
+                product="TCL Roku Android Tv"
+                price="$800.00"
+              />
+            </div>
+          </div>
+          <div className={styles.ellipses}>
+            <EllipseIcon color="#E73C17" />
+            <EllipseIcon />
+            <EllipseIcon />
+            <EllipseIcon />
+          </div>
+        </div>
+        <div className={styles.newsletterContainer}>
+          <div className={styles.newsletter}>
+            <h2>Join our newsletter and get offers</h2>
+            <span>Sign up our newsletter</span>
+          </div>
+          <div className={styles.newsletterInput}>
+            <input type="email" placeholder="Enter your email" />
+            <button>
+              <span>subscribe</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </main>
-  )
+  );
 }
