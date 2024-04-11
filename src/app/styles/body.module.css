@@ -215,11 +215,12 @@
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  padding: 1rem 5rem;
+  padding: 2rem 5rem;
   font-size: 18px;
   font-weight: 300;
   text-align: left;
 }
+
 .descriptionInfo > p {
   margin: 0;
 }
@@ -449,6 +450,9 @@
     padding: 0 1rem;
     font-size: 12px;
   }
+  .cardsWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
   .cardsWrapper > :nth-last-child(-n + 2) {
     display: none;
   }
@@ -471,6 +475,7 @@
   .productTitle > h3 {
     font-size: 24px;
   }
+  .descriptionInfo,
   .productOptions {
     padding: 1rem 0;
   }
@@ -479,7 +484,6 @@
   }
   .relatedProductsContainer,
   .productContainer,
-  .descriptionInfo,
   .productInfo {
     padding: 0 1rem;
   }

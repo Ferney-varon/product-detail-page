@@ -1,4 +1,4 @@
-import Image from "../../../node_modules/next/image";
+import Image from "next/image";
 import styles from "../styles/body.module.css";
 import ArrowRightIcon from "../assets/icons/arrowRightIcon";
 import ArrowLeftIcon from "../assets/icons/arrowLeftIcon";
@@ -44,7 +44,6 @@ export default function Product() {
               alt="Main image Tv"
             />
           </div>
-
           <div className={styles.carrouselArrow}>
             <ArrowRightIcon />
           </div>
