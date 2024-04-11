@@ -6,11 +6,11 @@ const ArrowRightIcon = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_36_497)">
+    <g clipPath="url(#clip0_36_497)">
       <path
         d="M6 4.5L10 8.5L6 12.5"
         stroke="white"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>

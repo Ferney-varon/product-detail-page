@@ -6,19 +6,19 @@ const PlusIcon = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_36_808)">
+    <g clipPath="url(#clip0_36_808)">
       <path
         d="M12 5V19"
         stroke="#191919"
         strokeWidth="2.5"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M5 12H19"
         stroke="#191919"
         strokeWidth="2.5"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
